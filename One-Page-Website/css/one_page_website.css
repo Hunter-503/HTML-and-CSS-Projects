@@ -90,8 +90,8 @@ p {
   background-color: #fefefe;
   margin: auto;
   padding: 0;
-  width: 90%;
-  max-width: 1200px;
+  width: 50%;
+  max-width: 800px;
 }
 
 /* The Close Button */
@@ -124,7 +124,7 @@ p {
   width: auto;
   padding: 16px;
   margin-top: -50px;
-  color: white;
+  color: salmon;
   font-weight: bold;
   font-size: 20px;
   transition: 0.6s ease;
