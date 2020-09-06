@@ -4,6 +4,8 @@
 		<meta charset="ut-8">
 		<title>The best Tech info!</title>
 		<p>Welcome, here you will see all updated info about new and upcoming hardware!</p>
+		<script src="js/one_page_website.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/one_page_website.css">
 	</head>
 	<body>
 	
@@ -12,8 +14,8 @@
 			<div>
 				<ul>
 					<a href="#home" id="link"><li>HOME</li></a>
-					<a href="#gallery"><li>GALLERY</li>
-					<a href="#contact" id="link"><li>NEWS LETTER SIGNUP</li>
+					<a href="#gallery"><li>GALLERY</li></a>
+					<a href="#contact" id="link"><li>NEWS LETTER SIGNUP</li></a>
 				</ul>
 			</div>
 		</div>
@@ -30,120 +32,87 @@
 		<!-- END HOME-->
 		
 		<!-- GALLERY -->
-		<section>
-			<div id="gallery">
+		<section id="gallery">
+			<div class="container">
 				<h1>Gallery</h1>
-				<div>
-					
-					<!-- PHOTO-CONTAINER 1 -->
-					<div>
-						<div>
-							<img src="icon/thumbnail1.jpg" alt="Ryzen y with cooler">
-							<div>
-							<details> 
-								<summary>AMD CPU W/ Stock Cooler</summary>
-								<p>This is the Ryzen 7 that comes with their stock Prism cooler that is<br>
-								able to handle almost all major loads and still keep your CPU at a normal temp range.</p>
-							</details>
-							</div>
+				<div class="flex-container">
+			
+				<h2 style="text-align:center">Lightbox</h2>
+					<div class="row">
+						<div class="column">
+						  <img src="icon/thumbnail1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+						</div>
+						<div class="column">
+						  <img src="icon/thumbnail22.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+						</div>
+						<div class="column">
+						  <img src="icon/thumbnail3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+						</div>
+						<div class="column">
+						  <img src="icon/thumbnail8.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
 						</div>
 					</div>
-					<!-- END PHOTO-CONTAINER 1 -->
-					
-					<!-- PHOTO-CONTAINER 2 -->
-					<div>
-						<div>
-							<img src="icon/thumbnail2.jpg" alt="AMD Threadripper.">
-							<div>
-							<details> 
-								<summary>AMD Threadripper!</summary>
-								<p>Here we have the AMD threadripper that can handle any task you throw out it,<br>
-								this has proven to be one of the best CPU's on the market.</p>
-							</details>
-							</div>
-						</div>
-					</div>
-					<!-- END PHOTO-CONTAINER 2 -->
-					
-					<!-- PHOTO-CONTAINER 3 -->
-					<div>
-						<div>
-							<img src="icon/thumbnail3.jpg" alt="AMD Threadripper W/ Intel CPU.">
-							<div>
-							<details> 
-								<summary>AMD Vs. Intel</summary>
-								<p>For the longest time Intel reigned supreme, but with the recent leaps<br>
-								and bound that AMD has been making Intel is taking a back seat in both performance<br>
-								and affordability.<p>
-							</details>
-							</div>
-						</div>
-					</div>
-					<!-- END PHOTO-CONTAINER 3  -->
-					
-					<!-- PHOTO-CONTAINER 4 -->
-					<div>
-						<div>
-							<img src="icon/thumbnail8.jpg" alt="Intel CPU.">
-							<div>
-							<details> 
-								<summary>Intels CPU</summary>
-								<p>Intel will always be remmbered as the company that paved the way to the future of technology.</p>
-							</details>
-							</div>
-						</div>
-					</div>
-					<!-- END PHOTO-CONTAINER 4 -->
-					
-					<!-- PHOTO-CONTAINER 5 -->
-					<div>
-						<div>
-							<img src="icon/thumbnail6.jpg" alt="AMD Radeon GPU.">
-							<div>
-							<details> 
-								<summary>AMD Radeon</summary>
-								<p>This is one of the current GPU's on the market for AMD,<br>
-								while great AMD is known for driver issues with their GPU's.</p>
-							</details>
-							</div>
-						</div>
-					</div>
-					<!-- END PHOTO-CONTAINER 5 -->
-					
-					<!-- PHOTO-CONTAINER 6 -->
-					<div>
-						<div>
-							<img src="icon/thumbnail7.jpg" alt="Radeon Vs. Nvidia.">
-							<div>
-							<details> 
-								<summary>Radeon Vs. Nvidia</summary>
-								<p>Going into the future the support and the reliability of Nvidias<br>
-								grahpics cards could leave AMD in the dust if they don't step up their<br>
-								drive support and stability.</p>
-							</details>
-							</div>
-						</div>
-					</div>
-					<!-- END PHOTO-CONTAINER 6 -->
-					
-					<!-- PHOTO-CONTAINER 7 -->
-					<div>
-						<div>
-							<img src="icon/thumbnail9.jpg" alt="Nvidia dream.">
-							<div>
-							<details> 
-								<summary>Unnecessary</summary>
-								<p>Here we just have every boys dream when building a PC.</p>
-							</details>
-							</div>
-						</div>
-					</div>
-					<!-- END PHOTO-CONTAINER 7 -->
-				</div>
+					  
+					  <!-- The Modal/Lightbox -->
+					  <div id="myModal" class="modal">
+						<span class="close cursor" onclick="closeModal()">&times;</span>
+						<div class="modal-content">
+					  
+							  <div class="mySlides">
+								  <div class="numbertext">1 / 7</div>
+								  <img src="icon/thumbnail1.jpg" style="width:100%">
+							  </div>
+					  
+							  <div class="mySlides">
+								  <div class="numbertext">2 / 7</div>
+								  <img src="icon/thumbnail22.jpg" style="width:100%">
+							  </div>
+					  
+							  <div class="mySlides">
+								  <div class="numbertext">3 / 7</div>
+								  <img src="icon/thumbnail3.jpg" style="width:100%">
+							  </div>
+					  
+							  <div class="mySlides">
+								  <div class="numbertext">4 / 7</div>
+								  <img src="icon/thumbnail8.jpg" style="width:100%">
+							  </div>
+					  
+							  <!-- Next/previous controls -->
+							  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+							  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+					  
+							  <!-- Caption text -->
+							  <div class="caption-container">
+							  <p id="caption"></p>
+							  </div>
+					  
+							  <!-- Thumbnail image controls -->
+							  <div class="caption=container">
+								  <p id="caption"></p>
+							  </div>		
+									  
+							  <!--thumb controls-->
+							  <div class="column">
+								  <img class="demo cursor" src="icon/thumbnail1.jpg" onclick="currentSlide(1)" alt="gg">
+							  </div>
+					  
+							  <div class="column">
+								  <img class="demo cursor" src="icon/thumbnail22.jpg" onclick="currentSlide(1)" alt="hrt">
+							  </div>
+					  
+							  <div class="column">
+								  <img class="demo cursor" src="icon/thumbnail3.jpg" onclick="currentSlide(1)" alt="hel">
+							  </div>
+					  
+							  <div class="column">
+								  <img class="demo cursor" src="icon/thumbnail8.jpg" onclick="currentSlide(1)" alt="cool">
+							  </div>
+						  </div>
+					  </div>
+				</div> 
 			</div>
-		</section>
-		<!-- END GALLERY -->			
-
+		</section>		 				
 		<!-- VIDEO-CONTAINER 1 -->
 	<section>	
 		<div>
@@ -171,9 +140,10 @@
 		<!-- END VIDEO-CONTAINER 2 -->
 		
 		<!-- NEWS LETTER -->
-				<div id="contact">
-					<div>
-						<div>
+		<section id="contact">
+			<div class="container">
+				<h1>News letter Sign-up!</h1>
+				<div class="flex-container">
 							<form action="" method="post">
 								<input class="news letter" type="text" value="First Name">
 								<input class="news letter" type="text" value="Last Name">
