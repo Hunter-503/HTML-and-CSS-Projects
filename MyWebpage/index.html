@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!--Head-->
+    <head>
+        <meta charset="UTF-8">
+        <title>Joel Hunter!</title>
+        <link rel="stylesheet" type="text/css" href="CSS/my_webpage.css">
+    </head>
+
+<!--Body-->    
+<body class="Background">
+
+<!--NavBar-->
+    <div class="Navbar">
+        <a class="active" href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#animal">Animals!</a>
+        <a href="#GitHub">GitHub</a>
+        <a onclick="openForm()" ondblclick="closeForm()">Contact me!</a> <!-- This nmakes our open form function run-->
+    </div>   
+
+<!--Home-->
+    <div id="Home">
+        <br> <!--Breaks inserted to add space between navbar and heading-->
+        <br>
+    
+<!--Video-->
+        <video autoplay muted loop id="Tiger_video"><!--Add a video name here-->
+            <source src="Img/Tiger_Trim.mp4" type="video/mp4" alt="Tiger"> <!--Add Video link here-->
+             Your browser does not support HTML% video.   
+        </video>
+    </div>
+
+<!--Video Text-->
+    <div class="video_text">
+        <h1 style="color: black;">Joel Hunters Portfolios</h1>
+            <p>
+                <strong>
+                    <center>
+                        <q>Sometimes you never realize the value of a moment until it becomes a memory. 
+                        </q>
+                        <br>-Dr.Seuss<br>
+                        <br>
+                        My name is Joel Hunter. Welcome to my porfolio website. On it, I will tell you about my background and experiences and what make me the person I am today.
+                        <br>Thank you for stopping by and enjoy!
+                    </center>
+                </strong>
+            </p> 
+    </div>
+
+<!--Slide show-->
+    <div id="Slideshow">
+        <div id="Slideshow_Background">
+            <div id="Slideshow_Container">
+
+                <div class="mySlides fade">
+                    <div class="Slide_Number">1 / 6</div>
+                        <img class="Slide_Show_Images" src="Img/me.jpg" style="width:100%;">
+                            <div class="text">My Name is Joel, I'm here to help you in any way possible!</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="Slide_Number">2 / 6</div>
+                        <img class="Slide_Show_Images" src="Img/design.jpg" style="width:100%;">
+                            <div class="text">I am a fully versed software developer</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="Slide_Number">3 / 6</div>
+                        <img class="Slide_Show_Images" src="Img/developer.jpg" style="width:100%;">
+                            <div class="text">Trained in the some of the most common coding languages </div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="Slide_Number">4 / 6</div>
+                        <img class="Slide_Show_Images" src="Img/icon.jpg" style="width:100%;">
+                            <div class="text">With my experiences I could help you achive any goals needed!</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="Slide_Number">5 / 6</div>
+                        <img class="Slide_Show_Images" src="Img/coder.jpg" style="width:100%;">
+                            <div class="text">
+                                <a onclick="openForm()" href="#Contact" style="color: aqua;">Contact me now!</a>
+                            </div>
+                </div>
+
+            <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+    <br>
+
+    <div style="text-align: center;">
+
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+<!--About section-->
+    <div class="row" id="about">
+        <div class="column_2"><!--left column-->
+            <img src="Img/real_tiger.jpg" alt="A real tiger"> <!--put image here-->
+        </div>
+
+        <div class="column_1"> <!--right column-->
+            <h1>About</h1>
+            <p>I'm a new software developer who recently found his love for working with computers after leaving my previous field as a Vet Assistant.<br>
+             <br>I love my very amazing and supporting Girlfriend, and my one lazy cat at home. They support me and push me to be the best person I can be.
+            </p>
+        </div>
+    </div>
+
+<!--Animals Section-->
+    <div class="row" id="animal">
+        <div class="column_1"><!--left column-->
+            <h1>Animals!</h1>
+                <p>You can view a video here that shows the workings of a Vet Clinic:<br>
+                <center><a href="https://www.youtube.com/watch?v=uUnFcfKifUM" target="_blank">Vet Ranch!</a></center></p> <!--Add vet Ranch video and picture-->
+        </div>
+        
+        <div class="column_2">
+            <a href="https://www.youtube.com/watch?v=uUnFcfKifUM"  target="_blank"><img src="Img/doggo.jpg" alt="Doggo"></a> <!--Add git hub info and photo-->
+        </div>
+    </div>
+
+<!--GitHub Section-->
+    <div class="row" id="GitHub">
+        <div class="column_2"> <!--github image, left column-->
+            <h1>GitHub!</h1>
+                <p>This link will take you to my GitHub profile!<br>
+                    <center><a href="https://github.com/Hunter-503" target="_blank">Joel Hunters GitHub</a></center></p><!--Git hub link-->
+        </div>
+            <div class="column_1">
+                <a href="https://github.com/Hunter-503"  target="_blank"><img src="Img/gitkat.png" alt="Gitkat"></a> <!--Add git hub info and photo-->
+        </div>
+    </div>
+
+<!--contact-->
+  <div id="Contact">
+    <button onclick="openForm()" class="Pop_Up_Button"> CONTACT </button>
+        <div class="form-popup" id="myForm" style="display: none;" >
+            <form action="https://formspree.io/info@learncodinganywhere.com" method="POST" class="form-container">
+            <h1>Contact</h1>
+                <label for="name"><b>Name</b></label>
+                    <input type="text" placeholder="Type your full name here" name="name" required>
+                <label for="phone"><b>Phone</b></label>
+                    <input type="text" placeholder="Enter phone number here!" name="phone">   
+                <label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="Enter email here" name="email" required>
+                <label for="message"><b>Message</b></label>
+                    <input type="text" placeholder="Type your message here" name="message"> 
+
+            <button type="submit" class="btn">SUBMIT</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+            </form>
+        </div>
+    </div>
+
+    <!--Footer-->
+        <footer>
+            <p>
+                <center>&copy Jhunter inc., <a href="Joel.hunter503@gmail.com">Joel Hunters Portfolio</a></center><br>
+            </p>
+        </footer>
+
+        <script src="JS/index.js"></script>
+
+</body>
+</html>
