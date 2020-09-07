@@ -294,8 +294,8 @@ img {
 } 
 
 center:hover {
-    transition: transform 2s;
-    transform: scaleX(-1);
+    transition: transform 4s;
+    transform: scale(-1);
 }
 
 p:hover {
