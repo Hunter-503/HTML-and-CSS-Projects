@@ -1,0 +1,18 @@
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #E86723;
+    background-color: #49B6B1;
+}
+
+
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    color: #9C3500;
+}
+
+body {
+    background-color: #23E8DE;
+}
