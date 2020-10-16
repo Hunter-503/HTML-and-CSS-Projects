@@ -1,5 +1,5 @@
 body {
-    font-family: 'Tangerine', serif;
+    font-family: 'Amatic SC', cursive;
     font-size: 48px;
     background-color: #852938 !important;
 }
@@ -26,30 +26,52 @@ h2 {
     background-color: #fdb822;
     border-radius: 6px;
     color: #78152b ;
-    padding: 15px 32px;
+    padding: 15px 33px;
+    padding-left: 20px;
+    align-content: center;
     text-align: center;
     display: inline-block;
     font-size: 25px;
-    font-family: 'Tangerine', serif;
+    font-family: 'Amatic SC', cursive;
     margin: 0 auto;
     cursor: pointer;
+    margin-bottom: 10px ;
   }
 
 img {
      border-radius: 8px;
+     box-shadow: 1px 1px 3px 1px #ecf0f1 ;
+    
   }
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ecf0f1;
+    font-family: 'Amatic SC', cursive;
+    font-size: 45pt;
+    align-content: center;
+  text-align: center;
+}
+  
 
 .row p {
     margin: 0px auto;
+    margin-top: 20px ;
     width: 570px;
     height: 100px;
     background-color: #fdb822;
     border-radius: 8px 8px 8px 8px ;
     padding-top: 20px;
-    padding-left: 30px;
-    font-size: 35px;
+    align-content: center;
+    font-size: 25px;
     color: #78152b;
-    text-align: center;
+    text-align: left;
+    top: 30px;
+    left: 16px;
+    font-family: 'Amatic SC', cursive;
 }
 
 
