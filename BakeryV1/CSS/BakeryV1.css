@@ -28,6 +28,7 @@ h2 {
     color: #78152b ;
     padding: 15px 33px;
     padding-left: 20px;
+    align-content: center;
     text-align: center;
     display: inline-block;
     font-size: 25px;
@@ -40,6 +41,7 @@ h2 {
 img {
      border-radius: 8px;
      box-shadow: 1px 1px 3px 1px #ecf0f1 ;
+    
   }
 
 .centered {
@@ -50,7 +52,8 @@ img {
     color: #ecf0f1;
     font-family: 'Amatic SC', cursive;
     font-size: 45pt;
-    
+    align-content: center;
+  text-align: center;
 }
   
 
@@ -62,7 +65,7 @@ img {
     background-color: #fdb822;
     border-radius: 8px 8px 8px 8px ;
     padding-top: 20px;
-    padding-left: 20px;
+    align-content: center;
     font-size: 25px;
     color: #78152b;
     text-align: left;
