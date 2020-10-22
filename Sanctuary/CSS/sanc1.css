@@ -6,12 +6,18 @@ body {
 
 .jumbotron h1{
   color: #fcca67;
+  
+}
+
+.jumbotron {
+  box-shadow: 0px 0px 10px 0px #fcca67;
 }
 
 .photo h2 {
     color: #fcca67 !important;
-    font-size: 25px;
+    font-size: 15px;
    text-shadow: 4px 4px 5px #000000;
+   text-align: center;
 }
 
 
@@ -26,16 +32,17 @@ img {
 .photo {
   position: relative;
   width: 300px;
-  height: 169px;
+  height: 200px;
   line-height: 0;
   margin-bottom: 1em;
   overflow: hidden;
   border-radius: 8px;
+  box-shadow: 0px 0px 10px 0px #fcca67;
 }
 
 .photo-overlay {
     position: absolute;
-    top: 10;
+    top: -15;
     right: 0;
     bottom: 0;
     left: 0;
@@ -43,6 +50,7 @@ img {
     padding-right: 20px;
     justify-content: center;
     align-items: center;
+    background-position: bottom;
 
 }
 
@@ -58,10 +66,21 @@ p {
 }
 
 .btn {
-  border-color: #fcca67;
-  background-color: #fc8959;
-  color: #4f99be;
+  border-color: #4f99be;
+  background-color: #4f99be;
+  color: #fcca67;
   
+}
+
+.container1 .btn {
+  position: absolute;
+  top: 70%;
+  right: 55%;
+  box-shadow: 10px 10px 22px -10px #000000;
+}
+
+.container2 .bth {
+  box-shadow: 10px 10px 22px -10px #000000;
 }
 
 .btn:hover {
@@ -101,18 +120,30 @@ p {
 .navbar {
   background-color: #fcca67;
 }
+
+.nav-pills a {
+  background-color: #fc8959;
+  border-radius: 5px ;
+  box-shadow: 10px 10px 22px -10px #000000;
+  margin: 10px 10px;
+  display: inline-block;
+  padding: 14px;
+  text-align: center;
+}
+
+
 .navbar .navbar-brand {
-  color: #4f99be;
+  color: #87e9d3;
 }
 .navbar .navbar-brand:hover,
 .navbar .navbar-brand:focus {
-  color: #fc8959;
+  color: #4f99be;
 }
 .navbar .navbar-text {
   color: #4f99be;
 }
 .navbar .navbar-text a {
-  color: #fc8959;
+  color: #4f99be;
 }
 .navbar .navbar-text a:hover,
 .navbar .navbar-text a:focus {
@@ -121,7 +152,6 @@ p {
 .navbar .navbar-nav .nav-link {
   color: #4f99be;
   border-radius: .25rem;
-  margin: 0 0.25em;
 }
 .navbar .navbar-nav .nav-link:not(.disabled):hover,
 .navbar .navbar-nav .nav-link:not(.disabled):focus {
