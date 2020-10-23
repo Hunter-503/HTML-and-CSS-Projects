@@ -1,0 +1,99 @@
+body {
+    font-family: 'Amatic SC', cursive;
+    font-size: 20px;
+    background-color: #f8ffff !important;
+}
+
+.jumbotron h1{
+  color: #f8ffff;
+  
+}
+
+.jumbotron {
+  box-shadow: 0px 0px 10px 0px #1452cd;
+}
+
+.photo h2 {
+    color: #fcca67 !important;
+    font-size: 15px;
+   text-shadow: 4px 4px 5px #000000;
+   text-align: center;
+}
+
+
+
+
+img {
+     border-radius: 8px;
+     box-shadow: 1px 1px 3px 1px #ecf0f1 ;
+    
+}
+
+.photo {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  line-height: 0;
+  margin-bottom: 1em;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px 0px #000000;
+}
+
+.photo-overlay {
+    position: absolute;
+    top: -15;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: center;
+    align-items: center;
+    background-position: bottom;
+
+}
+
+.row p {
+    line-height: 16px;
+    padding-bottom: 15px;
+    color: #f8ffff;
+    font-size: 10px;
+}
+
+p {
+  color: #f8ffff;
+}
+
+.btn {
+  border-color: #f0921a;
+  background-color: #f0921a;
+  color: #f8440b;
+  
+}
+
+.container6 .btn {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  box-shadow: 10px 10px 22px -10px #000000;
+  justify-content: left;
+}
+
+.container2 .btn {
+  box-shadow: 10px 10px 22px -10px #000000;
+}
+
+.btn:hover {
+  background-color: #fcca67;
+}
+
+.container6 {
+    background-color: #1452cd;
+    width: 250px;
+    height: 250px;
+    margin-right: 20px;
+    margin-left: 15px;
+    border-radius: 5px;
+    justify-content: center;
+}
