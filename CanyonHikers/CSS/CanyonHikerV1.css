@@ -1,0 +1,200 @@
+body {
+    font-family: 'Bitter', serif;
+    font-size: 20px;
+    background-color: #4f99be !important;
+}
+
+.jumbotron h1{
+  color: #fcca67;
+  
+}
+
+.jumbotron {
+  box-shadow: 0px 0px 10px 0px #fcca67;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+
+.photo h2 {
+    color: #fcca67 !important;
+    font-size: 15px;
+   text-shadow: 4px 4px 5px #000000;
+   text-align: center;
+}
+
+
+.logo {
+  position: relative;
+  height: 500px;
+  width: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 150px;
+  justify-content: center;
+}
+
+.photo {
+  position: relative;
+  width: 400px;
+  height: 300px;
+  margin-left: 150px;
+  line-height: 0;
+  margin-bottom: 1em;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px 0px #fcca67;
+}
+
+.photo-overlay {
+    position: absolute;
+    top: -15;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: center;
+    align-items: center;
+    background-position: bottom;
+
+}
+
+
+.row p {
+    line-height: 19px;
+    padding-bottom: 15px;
+    color: white;
+}
+
+p {
+  color: #fc8959;
+}
+
+.btn {
+  border-color: #4f99be;
+  background-color: #4f99be;
+  color: #fcca67;
+  
+}
+
+.col-25 {
+  background-color: #bb3b0e;
+  height: 65px;
+  margin-left: 10px;
+  margin-right: 5px;
+  padding-left: 15px;
+  text-align: center;
+  border-radius: 7px;
+}
+
+
+.container .row {
+  background-color: #d8c593;
+}
+
+.container1 .btn {
+  position: absolute;
+  top: 70%;
+  right: 55%;
+  box-shadow: 10px 10px 22px -10px #000000;
+}
+
+.container2 .bth {
+  box-shadow: 10px 10px 22px -10px #000000;
+}
+
+.btn:hover {
+  background-color: #fcca67;
+}
+
+
+.fas {
+  color: #000000;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.fa-bed {
+  color: #708160;
+}
+
+.fa-hot-tub {
+  color: #708160;
+}
+
+.fa-search {
+
+}
+
+
+* {
+    box-sizing: border-box;
+  }
+  
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  input[type=submit] {
+    background-color: #bb3b0e;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    width: 25%;
+    margin-left: 10px;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #bb3b0e;
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: #d8c593;
+    padding: 20px;
+  }
+  
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 70%;
+    margin-top: 6px;
+    padding-bottom: 5px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+input {
+    width: 100%;
+}
