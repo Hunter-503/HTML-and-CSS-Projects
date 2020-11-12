@@ -13,37 +13,52 @@
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script src="https://kit.fontawesome.com/b387c17388.js" crossorigin="anonymous"></script>
+<link href="CSS/vivify.min.css"  rel="stylesheet" type="text/css"/>
+<script>
+  function play(){
+      var audio = document.getElementById("sound");
+              audio.play();
+  }
+</script>
 <link rel="stylesheet" type="text/css" href="CSS/CanyonHikerV1.css">
 </head>
-<body>
+<body class="back" background="img/CanyonBackV2.jpg"></body>
+
 <nav class="navbar navbar-expand-md nav-pills">
     <div class="container-fluid">
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav">
-                <a href="1" class="nav-item navbar-brand active"><i class="fas fa-hot-tub"></i></a>
-                <a href="2" class="nav-item navbar-brand active"><i class="fas fa-horse"></i></a>
-                <a href="3" class="nav-item navbar-brand active"><i class="fas fa-bed"></i></a>
-                <a href="4" class="nav-item navbar-brand active"><i class="fas fa-ship"></i></a>
+            <div class="navbar-nav vivify popInTop">
+                <a href="#" class="nav-item navbar-brand active"><i class="fas fa-hot-tub"></i></a>
+                <audio id="sound" src="horsesound.mp3" type="audio/mp3"></audio>
+                <a href="1" class="nav-item navbar-brand active"><i class="fas fa-horse" onclick="play(horsesound.mp3);"></i></a>
+                <a href="#" class="nav-item navbar-brand active"><i class="fas fa-bed "></i></a>
+                <a href="#" class="nav-item navbar-brand active"><i class="fas fa-ship"></i></a>
             </div>
-            <div class="navbar-nav ml-auto">
-                <a href="4" class="nav-item navbar-brand active"><i class="fas fa-search"></i></a>
+            <div class="vivify">
+                <div class="nav justify-content-end">
+                  <a href="#" class="nav-item navbar-brand active"><i class="fas fa-search spinIn"></i></a>
+                </div>
             </div>
         </div>
     </div>    
 </nav>
 <div class="container-fluid">
-    <div style="background-image:url(img/DesertCampV1.jpg)" class="jumbotron jumbotron-image-background">
+  <div class="position">
+      <div style="background-image:url(img/DesertCampV1.jpg)" class="jumbotron jumbotron-image-background">
         <div class=""> <img class="logo" src="img/CanLogoV1.png" alt=""></div>
+      </div>      
     </div>
     <div class="row">
             <div class="col-md-4">   
                 <div class="photo">
-                        <img src="img/canhorse.jpg" width="400" height="300">
+                        <img herf="1" src="img/canhorse.jpg" width="400" height="300">
                     <div class="photo-overlay">
                         <h2>Rates!</h2>
+                        <p>$150 per person plus $75 hourly rate<br>
+                        $400 per person for whole day use!</p>
                     </div>
                 </div>
             </div>    
@@ -52,6 +67,9 @@
                         <img src="img/CanyonRiverV1.jpg" width="400" height="300">
                         <div class="photo-overlay">
                             <h2>Rates!</h2>
+                            <h3>Kayak rentals:</h3>
+                            <p>$150 per person plus $75 hourly rate<br>
+                            $400 per person for whole day use!</p>
                         </div>
                     </div>  
             </div>
@@ -91,7 +109,7 @@
     
         <div class="row">
           <div class="col-25">
-            <label for="subject">Subject</label>
+            <label for="subject">Inquiries!</label>
           </div>
           <div class="col-75">
             <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
@@ -108,7 +126,7 @@
     <footer>
         <div class="">
             <div class="col-md-6">
-                <p>Copyright &copy; 2020 Hunter's Sanctuary</p>
+                <p>Copyright &copy; 2020 Canyon Hikers!</p>
             </div>
             <div class="col-md-6 text-md-right">
                 <a href="#" class="text-dark">Terms of Use</a> 
