@@ -14,16 +14,15 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script src="https://kit.fontawesome.com/b387c17388.js" crossorigin="anonymous"></script>
 <link href="CSS/vivify.min.css"  rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" type="text/css" href="CSS/CanyonHikerV1.css">
+</head>
+<body class="back" background="img/CanyonBackV2.jpg"></body>
 <script>
   function play(){
       var audio = document.getElementById("sound");
               audio.play();
   }
 </script>
-<link rel="stylesheet" type="text/css" href="CSS/CanyonHikerV1.css">
-</head>
-<body class="back" background="img/CanyonBackV2.jpg"></body>
-
 <nav class="navbar navbar-expand-md nav-pills">
     <div class="container-fluid">
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
@@ -33,7 +32,7 @@
             <div class="navbar-nav vivify popInTop">
                 <a href="#" class="nav-item navbar-brand active"><i class="fas fa-hot-tub"></i></a>
                 <audio id="sound" src="horsesound.mp3" type="audio/mp3"></audio>
-                <a href="1" class="nav-item navbar-brand active"><i class="fas fa-horse" onclick="play(horsesound.mp3);"></i></a>
+                <a href="#photo" class="nav-item navbar-brand active"><i class="fas fa-horse" onclick="play();"></i></a>
                 <a href="#" class="nav-item navbar-brand active"><i class="fas fa-bed "></i></a>
                 <a href="#" class="nav-item navbar-brand active"><i class="fas fa-ship"></i></a>
             </div>
@@ -54,7 +53,8 @@
     <div class="row">
             <div class="col-md-4">   
                 <div class="photo">
-                        <img herf="1" src="img/canhorse.jpg" width="400" height="300">
+
+                      <a id="photo"><img herf="#photo" src="img/canhorse.jpg" width="400" height="300"></a>  
                     <div class="photo-overlay">
                         <h2>Rates!</h2>
                         <p>$150 per person plus $75 hourly rate<br>
